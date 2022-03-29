@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 1148668025}
   - component: {fileID: 1148668027}
   - component: {fileID: 1148668026}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatForm TileMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1148,8 +1148,8 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 23
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 3
+      m_TileSpriteIndex: 20
+      m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -1371,7 +1371,7 @@ Tilemap:
     m_Data: {fileID: 6972465368094823745, guid: 4fc2a8b93af89a1468bdeeeb37caec3b, type: 3}
   - m_RefCount: 33
     m_Data: {fileID: -7832389824997676707, guid: 4fc2a8b93af89a1468bdeeeb37caec3b, type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data: {fileID: -3542295685721467227, guid: 4fc2a8b93af89a1468bdeeeb37caec3b, type: 3}
   - m_RefCount: 9
     m_Data: {fileID: 7799159119227759483, guid: 4fc2a8b93af89a1468bdeeeb37caec3b, type: 3}
@@ -1397,7 +1397,7 @@ Tilemap:
     m_Data: {fileID: -3326836957996475874, guid: 4fc2a8b93af89a1468bdeeeb37caec3b, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: -4977721373819348528, guid: 4fc2a8b93af89a1468bdeeeb37caec3b, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 7953296568139915108, guid: 4fc2a8b93af89a1468bdeeeb37caec3b, type: 3}
   - m_RefCount: 15
     m_Data: {fileID: -1667590691872097069, guid: 4fc2a8b93af89a1468bdeeeb37caec3b, type: 3}
@@ -1426,7 +1426,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 6.12e-43
-  - m_RefCount: 84
+  - m_RefCount: 85
     m_Data:
       e00: 1
       e01: 0
@@ -1462,7 +1462,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data:
       e00: -1
       e01: -0.00000008742278
@@ -16147,9 +16147,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 463772054, guid: 0e0d708934865a94193f0aa9a4db82bc, type: 3}
+      propertyPath: m_GravityScale
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 804190987405795098, guid: 0e0d708934865a94193f0aa9a4db82bc, type: 3}
       propertyPath: runSpeed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 804190987405795098, guid: 0e0d708934865a94193f0aa9a4db82bc, type: 3}
+      propertyPath: jumpSpeed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1940784128365103832, guid: 0e0d708934865a94193f0aa9a4db82bc, type: 3}
       propertyPath: m_Name
@@ -16161,11 +16169,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1940784128365103833, guid: 0e0d708934865a94193f0aa9a4db82bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.35
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 1940784128365103833, guid: 0e0d708934865a94193f0aa9a4db82bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.01
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 1940784128365103833, guid: 0e0d708934865a94193f0aa9a4db82bc, type: 3}
       propertyPath: m_LocalPosition.z
