@@ -62,6 +62,18 @@ public class PlayerMovement : MonoBehaviour
         Instantiate(bullet, gun.position, transform.rotation);
     }
 
+    void OnInteract(InputValue value)
+    {
+        if(!isAlive){return;}
+
+        if(!bodyCollider.IsTouchingLayers(LayerMask.GetMask("Interactables"))) {return;}
+
+        if(FindObjectOfType<LevelExit>().nextLevel)
+        {
+            StartCoroutine(FindObjectOfType<LevelExit>().LoadNextLevel());
+        }
+    }
+
     void Run()
     {
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, rgb.velocity.y);
