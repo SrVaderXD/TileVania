@@ -9,7 +9,10 @@ public class LevelExit : MonoBehaviour
     public bool nextLevel = false;
     void OnTriggerEnter2D(Collider2D other) 
     {
-        nextLevel = true;
+        if (other.tag == "Player")
+        {
+            nextLevel = true;
+        }
     }
 
     void OnTriggerExit2D(Collider2D other) 
