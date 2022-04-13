@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPickupSFX: {fileID: 8300000, guid: d25f794a98f9c304eaa7b6fe4af84767, type: 3}
+  pointsForCoinPickup: 10
 --- !u!82 &-6719598006696302903
 AudioSource:
   m_ObjectHideFlags: 0
@@ -146,7 +147,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
